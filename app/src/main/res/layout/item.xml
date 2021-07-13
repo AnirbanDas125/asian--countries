@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/countryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="0dp"
+            android:text="Country Name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/countryCapital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capital"
+            android:textSize="15sp"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginLeft="145dp"/>
+
+        <TextView
+            android:id="@+id/countryRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Region"
+            android:textSize="22sp"
+            android:textColor="#137407"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/countryPopulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Population"
+            android:textSize="15sp"
+            android:textColor="#1111EC"
+            android:layout_marginTop="116dp"
+            android:layout_marginLeft="240dp"/>
+
+        <TextView
+            android:id="@+id/countrySubregion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SubRegion"
+            android:layout_marginLeft="100dp"
+            android:textColor="#EC1B11"
+            android:layout_marginTop="120dp"/>
+
+        <ImageView
+            android:id="@+id/countryFlag"
+            android:layout_width="120dp"
+            android:layout_height="80dp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
